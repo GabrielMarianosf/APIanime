@@ -4,6 +4,6 @@ require("dotenv/config");
 
 const port = process.env.NODE_PORT;
 
-app.listen(port || 5000, () =>
+app.listen(process.env.PORT || port, () =>
   console.log(`Servidor Rodando na porta ${port}`)
 );
